@@ -1,0 +1,143 @@
+.coffe {
+    padding: 100px 10% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        justify-content: center;
+ 
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    &__description {
+        line-height: 1.5em;
+        color: #332722;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 13px;
+        border-radius: 5px;
+        border: 1px solid;
+        width: 101px;
+        height: 32px;
+        color: #46bc70;
+
+        &--text {
+            text-decoration: none;
+            color: #46bc70;  
+        }
+
+        :hover {
+            text-decoration: none;
+            color: #46bc70c2;
+        }
+    }
+
+    
+    &__img {
+        display: flex;
+        align-items: flex-end;
+        width: 65%;
+      
+
+        &--content {
+            background-image: url("images/imac.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            width: 100%;
+            height: 495px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    .coffe {
+        padding: 0 5% 0;
+        flex-direction: column;
+        width: 100%;
+
+    &__content {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    &__img {
+        width: 100%;
+        
+    }
+}    
+
+}
+
+@media screen and (max-width: 650px) {
+    .coffe {
+        padding: 0 5% 0;
+        flex-direction: column;
+        width: 100%;
+
+        &__content {
+            width: 100%;
+            margin-bottom: 80px;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__img {
+            width: 100%;
+            height: 421px;
+    }
+    }
+    }
+
+@media screen and (max-width: 480px) {
+    .coffe {
+        padding: 0 5% 0;
+        flex-direction: column;
+        width: 100%;
+
+        &__content {
+            width: 100%;
+            margin-bottom: 80px;
+        }
+        &__img {
+            width: 100%;
+            height: 200px;
+    }
+    }
+}
+
+@media screen and (min-width: 1441px) {
+
+    .coffe {
+        width: 100%;
+
+    &__content {
+        width: 100%;
+        
+        
+    }
+    &__img {
+        width: 55%;
+        
+    }
+}    
+
+}
+
