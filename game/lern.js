@@ -14,7 +14,7 @@ function send() {
         resultnalog = result * 0.195;
         resultzp =  result - resultnalog;
 
-        document.getElementById('outt').innerHTML = resultzp.toFixed(2); + ' - Без учёта премии(Мес. ТД)';
+        document.getElementById('outt').innerHTML = resultzp.toFixed(2) + ' - Без учёта премии(Мес. ТД)';
 }
 
     
