@@ -1,0 +1,61 @@
+.devise {
+    padding: 30px 0;
+    background: #bbbbbb59;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &__slide {
+        width: 714px;
+        height: 263px;
+	    border: 1px solid black;
+	    overflow: hidden;
+    }
+
+    &__content {
+        display: flex;
+        overflow: hidden;
+        width: 714px;
+        position: relative;
+        transition: all ease 1s;
+    }
+
+    &__img {
+        width: 177px;
+        height: 263px;
+        margin-right: 2px;
+    }
+}
+
+@media screen and (min-width : 320px) and (max-width : 767px) {
+
+    .devise {
+        padding: 0 5%;
+        flex-direction: column;
+
+    &__slide {
+        width: 62%;
+        align-items: center;
+        text-align: center;
+        }
+        
+    &__img {
+        width: 100%;
+        height: 300px;
+    }
+    }
+} 
+
+@media screen and (max-width: 980px) {
+    .devise {
+        padding: 0 5%;
+        flex-direction: column;
+
+    &__slide {
+        width: 51%;
+        align-items: center;
+        text-align: center;
+        }
+    }
+}
