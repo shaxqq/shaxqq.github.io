@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Коммутаторы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body>
+    <header class="nav">
+        <div class="nav__logo">
+            <a href="index.html" class="nav__text" >  <p>Swit</p></a>
+            <a href="index.html"class="nav__text--right"> <p>ches</p></a>
+        </div>
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="zte.html" class="nav__link">ZTE</a></li>
+            <li class="nav__item">
+                <a href="dlink.html" class="nav__link">D-link</a></li>
+            <li class="nav__item">
+                <a href="linksys.html" class="nav__link">Linksys</a></li>
+            <li class="nav__item">
+                <a href="foxgate.html" class="nav__link">FoxGate</a></li>
+            <li class="nav__item">
+                <a href="raisecom.html" class="nav__link">Raisecom</a></li>
+            <li class="nav__item">
+                <a href="bdcom.html" class="nav__link">BDCOM</a></li>
+            <li class="nav__item">
+                <a href="edgecore.html" class="nav__link">EdgeCore</a></li>
+            <li class="nav__item">
+                <a href="quidway.html" class="nav__link">Quidway</a> </li>
+            <!-- <li class="nav__item">
+                <a href="l3zte.html" class="nav__link">L3-ZTE</a></li>
+            <li class="nav__item">
+                <a href="l3cisco.html" class="nav__link">L3-Cisco</a></li> -->
+        </header>
+
+    <section class="header">
+        <h1 class="header__title">Welcome to </h1>
+        <p class="header__content">directory on switches</p>
+    </section>
+
+    <section class="main">
+        <div class="main__description">
+            <div class="main__content">
+                <h1 class="main__title">Linksys</h1>
+                <p class="main__text">sh interfaces status ethernet e”№” - посмотреть состояние порта</p> 
+                    <img src="images/linksys/1.png" width="740px"> 
+                <p class="main__text">sh interfaces configuration ethernet e”№” - посмотреть состояние порта</p> 
+                    <img src="images/linksys/2.png" width="647px"> 
+                <p class="main__text">sh interfaces description ethernet e”№” - посмотреть описание порта</p> 
+                    <img src="images/linksys/3.png" width="190px">
+                <p class="main__text">sh bridge address-table ethernet e”№” - посмотреть MAC адрес</p> 
+                    <img src="images/linksys/4.png" width="514px">
+                <p class="main__text">sh ip dhcp snooping binding ethernet e”№” - посмотреть привязки</p> 
+                    <img src="images/linksys/5.png" width="650px">
+                    <img src="images/linksys/6.png" width="640px">
+                <p class="main__text">sh ip source-guard status ethernet e”№” - посмотреть статус привязки</p> 
+                    <img src="images/linksys/7.png" width="705px">
+                    <img src="images/linksys/8.png" width="681px">
+                    <img src="images/linksys/9.png" width="629px">
+                    <img src="images/linksys/10.png" width="549px">
+                <p class="main__text">sh interfaces counters ethernet e”№” - посмотреть статистику об ошибках</p> 
+                    <img src="images/linksys/11.png" width="700px">
+                <p class="main__text">test copper-port tdr e”№” - протестировать кабель</p> 
+                    <img src="images/linksys/12.png" width="222px">
+                <p class="main__text">sh vlan — посмотреть Vlan на свиче</p> 
+                    <img src="images/linksys/13.png" width="722px">
+                <p class="main__text">sh system – посмотреть информацию о свиче</p> 
+                    <img src="images/linksys/14.png" width="914px">
+                <p class="main__text">sh cpu utilization – посмотреть загрузку ЦПУ свича</p> 
+                    <img src="images/linksys/15.png" width="432px"><br>
+                <p class="main__text--content">Прокинуть Vlan на порт<br>
+1.	console – заходим в конфиг (config) <br>
+2.	console(config)# – заходим на порт (interface ethernet e”№” )<br>
+3.	console(config-if)# – switchport mode access<br>
+4.	console(config-if)# – switchport access vlan ”№”<br><br>
+
+Прокинуть Vlan на 1ГБ порт<br>
+1.	console – заходим в конфиг (config)<br>
+2.	console(config)# – заходим на порт (interface ethernet g”№” )<br>
+3.	console(config-if)# switchport trunk allowed vlan remove all<br>
+4.	console(config-if)# – switchport mode access<br>
+5.	console(config-if)# – switchport access vlan ”№”<br><br>
+
+Добавить/удалить Description<br>
+1.	console – заходим в конфиг (config)<br>
+2.	console(config)# – заходим на порт (interface ethernet e”№” )<br>
+3.	console(config-if)# – description «описание»<br>
+4.	console(config-if)# – no description – удалить описание<br><br>
+
+Вкл/Выкл Flowcontrol<br>
+1.	console – заходим в конфиг (config)<br>
+2.	console(config)# – заходим на порт (interface ethernet e”№” )<br>
+3.	console(config-if)# – flowcontrol “on/off”<br><br>
+
+Вкл/Выкл отображение логов<br>
+1.	console – заходим в конфиг (config)<br>
+2.	console(config)# – no logging console<br><br>
+
+Если абоненты находятся в 1 свиче но не могут пропинговать друг друга.<br>
+1.	console – заходим в конфиг (config)<br>
+2.	console(config)# – interface vlan № (заходим во Vlan)<br>
+3.	console(config-if)# - во влане пишем (no switchport protected-port fastethernet)<br>
+</p>
+                    
+            </div>
+        </div>  
+    </section>
+
+    <section class="footer">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <p class="footer__title">Sub Menu</p>
+                    <a href="zte.html" class="footer__link">ZTE</a>
+                    <a href="dlink.html" class="footer__link">D-link</a>
+                    <a href="linksys.html" class="footer__link">Linksys</a>
+                    <a href="foxgate.html" class="footer__link">FoxGate</a>
+                    <a href="raisecom.html" class="footer__link">Raisecom</a>
+                    
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">
+                <p class="footer__title">Sub Menu</p>
+                    <a href="bdcom.html" class="footer__link">BDCOM</a>
+                    <a href="edgecore.html" class="footer__link">EdgeCore</a>
+                    <a href="quidway.html" class="footer__link">Quidway</a>
+                    <!-- <a href="l3zte.html" class="footer__link">L3-ZTE</a>
+                    <a href="l3cisco.html" class="footer__link">L3-Cisco</a> -->
+            </li>
+        </ul>
+    
+            <div class="footer__social">
+            <ul class="footer__social--link">
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--facebook"></a>
+                </li>
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--twitter"></a>
+                </li>
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--dribbble"></a>
+                </li>
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--share"></a>
+                </li>
+            </ul>
+            <p class="footer__copy">Copyright © 2018 shaxqq</p>
+            </div>
+            
+        </section>
+</body>
+</html>
