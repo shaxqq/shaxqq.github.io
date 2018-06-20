@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Коммутаторы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body>
+    <header class="nav">
+        <div class="nav__logo">
+            <a href="index.html" class="nav__text" >  <p>Swit</p></a>
+            <a href="index.html"class="nav__text--right"> <p>ches</p></a>
+        </div>
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="zte.html" class="nav__link">ZTE</a></li>
+            <li class="nav__item">
+                <a href="dlink.html" class="nav__link">D-link</a></li>
+            <li class="nav__item">
+                <a href="linksys.html" class="nav__link">Linksys</a></li>
+            <li class="nav__item">
+                <a href="foxgate.html" class="nav__link">FoxGate</a></li>
+            <li class="nav__item">
+                <a href="raisecom.html" class="nav__link">Raisecom</a></li>
+            <li class="nav__item">
+                <a href="bdcom.html" class="nav__link">BDCOM</a></li>
+            <li class="nav__item">
+                <a href="edgecore.html" class="nav__link">EdgeCore</a></li>
+            <li class="nav__item">
+                <a href="quidway.html" class="nav__link">Quidway</a> </li>
+            <!-- <li class="nav__item"> -->
+                <!-- <a href="l3zte.html" class="nav__link">L3-ZTE</a></li>
+            <li class="nav__item">
+                <a href="l3cisco.html" class="nav__link">L3-Cisco</a></li> -->
+        </header>
+
+    <section class="header">
+        <h1 class="header__title">Welcome to </h1>
+        <p class="header__content">directory on switches</p>
+    </section>
+
+    <section class="main">
+        <div class="main__description">
+            <div class="main__content">
+                <h1 class="main__title">BDCOM</h1>
+                <p class="main__text">sh interface EPON0/1:№ - состояние порта</p> 
+                    <img class="main__img" src="images/bdcom/1.png" width="783px"> 
+                <p class="main__text">sh mac address-table interface ePON 0/1: №  - посмотреть МАС адрес на опрту (если онушка вендора FoxGate будет светится только МАС абонента)</p> 
+                    <img class="main__img" src="images/bdcom/2.png" width="374px"> 
+                <p class="main__text">sh mac address-table interface ePON 0/1: № - посмотреть МАС адрес на опрту</p> 
+                    <img class="main__img" src="images/bdcom/3.png" width="378px">
+                <p class="main__text">sh epon active-onu – посмотреть все активные онушки</p> 
+                    <img class="main__img" src="images/bdcom/4.png" width="1024px">
+                <p class="main__text">sh epon inactive-onu – посмотреть все не активные онушки</p> 
+                    <img class="main__img" src="images/bdcom/5.png" width="946px">
+                <p class="main__text">sh vlan – посмотреть Vlan`ы на свиче</p> 
+                    <img class="main__img" src="images/bdcom/6.png" width="702px"><br>
+                <p class="main__text--content">Если абонента подключили в 1ГБ порт, то нужно сделать его аксесным и выставить pvid.<br>
+                    Switch#config<br>
+                    Switch_config#interface gigaEthernet 0/№<br>
+                    Switch_config_g0/1# switchport mode access<br>
+                    Switch_config_g0/1# switchport pvid (№ абонентського Vlan`a)
+                    </p> 
+            </div>
+        </div>  
+    </section>
+
+    <section class="footer">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <p class="footer__title">Sub Menu</p>
+                    <a href="zte.html" class="footer__link">ZTE</a>
+                    <a href="dlink.html" class="footer__link">D-link</a>
+                    <a href="linksys.html" class="footer__link">Linksys</a>
+                    <a href="foxgate.html" class="footer__link">FoxGate</a>
+                    <a href="raisecom.html" class="footer__link">Raisecom</a>
+                    
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">
+                <p class="footer__title">Sub Menu</p>
+                    <a href="bdcom.html" class="footer__link">BDCOM</a>
+                    <a href="edgecore.html" class="footer__link">EdgeCore</a>
+                    <a href="quidway.html" class="footer__link">Quidway</a>
+                    <!-- <a href="l3zte.html" class="footer__link">L3-ZTE</a>
+                    <a href="l3cisco.html" class="footer__link">L3-Cisco</a> -->
+            </li>
+        </ul>
+    
+            <div class="footer__social">
+            <ul class="footer__social--link">
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--facebook"></a>
+                </li>
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--twitter"></a>
+                </li>
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--dribbble"></a>
+                </li>
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--share"></a>
+                </li>
+            </ul>
+            <p class="footer__copy">Copyright © 2018 shaxqq</p>
+            </div>
+            
+        </section>
+</body>
+</html>

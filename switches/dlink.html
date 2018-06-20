@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Коммутаторы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body>
+    <header class="nav">
+        <div class="nav__logo">
+            <a href="index.html" class="nav__text" >  <p>Swit</p></a>
+            <a href="index.html"class="nav__text--right"> <p>ches</p></a>
+        </div>
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="zte.html" class="nav__link">ZTE</a></li>
+            <li class="nav__item">
+                <a href="dlink.html" class="nav__link">D-link</a></li>
+            <li class="nav__item">
+                <a href="linksys.html" class="nav__link">Linksys</a></li>
+            <li class="nav__item">
+                <a href="foxgate.html" class="nav__link">FoxGate</a></li>
+            <li class="nav__item">
+                <a href="raisecom.html" class="nav__link">Raisecom</a></li>
+            <li class="nav__item">
+                <a href="bdcom.html" class="nav__link">BDCOM</a></li>
+            <li class="nav__item">
+                <a href="edgecore.html" class="nav__link">EdgeCore</a></li>
+            <li class="nav__item">
+                <a href="quidway.html" class="nav__link">Quidway</a> </li>
+            <!-- <li class="nav__item">
+                <a href="l3zte.html" class="nav__link">L3-ZTE</a></li>
+            <li class="nav__item">
+                <a href="l3cisco.html" class="nav__link">L3-Cisco</a></li> -->
+        </header>
+
+    <section class="header">
+        <h1 class="header__title">Welcome to </h1>
+        <p class="header__content">directory on switches</p>
+    </section>
+
+    <section class="main">
+        <div class="main__description">
+            <div class="main__content">
+                <h1 class="main__title">D-link</h1>
+                <p class="main__text">sh ports № - посмотреть состояние порта</p> 
+                    <img src="images/dlink/1.png" width="743px"> 
+                    <img src="images/dlink/2.png" width="675px"> 
+                <p class="main__text">sh ports № description – посмотреть описание порта</p> 
+                    <img src="images/dlink/3.png" width="662px">
+                <p class="main__text">sh fdb port – посмотреть МАС адрес на порту </p> 
+                    <img src="images/dlink/4.png" width="673px">
+                <p class="main__text">В блоки попадают МАС адреса, когда происходит не соответствие настроек с нашей стороны и настроек на оборудовании абонента.
+                        Чтобы вывести из блока – нужно проверить настройки на оборудовании абонента, если там стоит DHCP, то прокидываем конфигурацию на свич и биндим абонента, если там статика, то проверяем настройки у абонента и прокидываем соответствующие команды на коммутатор.
+                        <br>
+                        sh address_binding blocked all – посмотреть заблокированные МАС адреса.
+                        </p> 
+                    <img src="images/dlink/5.png" width="497px">
+                <p class="main__text">sh address_binding dhcp_snoop binding_entry – проверяем привязки на коммутаторе</p> 
+                    <img class="main__img" src="images/dlink/6.png" width="706px">
+                <p class="main__text">sh address_binding ip_mac all - проверяем привязки на коммутаторе</p> 
+                    <img class="main__img" src="images/dlink/7.png" width="665px">
+                <p class="main__text">sh error ports – посмотреть ошибки на порту</p> 
+                    <img class="main__img" src="images/dlink/8.png" width="568px">
+                <p class="main__text">cable_diag ports № - тестируем кабель</p> 
+                    <img class="main__img" src="images/dlink/9.png" width="681px">
+                <p class="main__text">sh ports № details</p> 
+                    <img class="main__img" src="images/dlink/10.png" width="691px">
+                <p class="main__text">sh packet ports № – отображение статистики трафика на порту</p> 
+                    <img class="main__img" src="images/dlink/11.png" width="641px">
+                <p class="main__text">sh utilization ports - отображение загрузки портов (входящие/исходящие пакеты)</p> 
+                    <img class="main__img" src="images/dlink/12.png" width="596px">
+                <p class="main__text">sh switch – посмотреть информацию о свиче</p> 
+                    <img class="main__img" src="images/dlink/13.png" width="717px">
+                <p class="main__text">sh utilization cpu – смотрим загруженность процессора на коммутаторе.</p> 
+                    <img class="main__img" src="images/dlink/14.png" width="642px">
+                <p class="main__text">sh vlan – смотрим Vlan`ы на свиче</p> 
+                    <img class="main__img" src="images/dlink/15.png" width="667px">
+            </div>
+        </div>  
+    </section>
+
+    <section class="footer">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <p class="footer__title">Sub Menu</p>
+                    <a href="zte.html" class="footer__link">ZTE</a>
+                    <a href="dlink.html" class="footer__link">D-link</a>
+                    <a href="linksys.html" class="footer__link">Linksys</a>
+                    <a href="foxgate.html" class="footer__link">FoxGate</a>
+                    <a href="raisecom.html" class="footer__link">Raisecom</a>
+                    
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">
+                <p class="footer__title">Sub Menu</p>
+                    <a href="bdcom.html" class="footer__link">BDCOM</a>
+                    <a href="edgecore.html" class="footer__link">EdgeCore</a>
+                    <a href="quidway.html" class="footer__link">Quidway</a>
+                    <!-- <a href="l3zte.html" class="footer__link">L3-ZTE</a>
+                    <a href="l3cisco.html" class="footer__link">L3-Cisco</a> -->
+            </li>
+        </ul>
+    
+            <div class="footer__social">
+            <ul class="footer__social--link">
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--facebook"></a>
+                </li>
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--twitter"></a>
+                </li>
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--dribbble"></a>
+                </li>
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--share"></a>
+                </li>
+            </ul>
+            <p class="footer__copy">Copyright © 2018 shaxqq</p>
+            </div>
+            
+        </section>
+</body>
+</html>
