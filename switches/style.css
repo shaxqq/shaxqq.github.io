@@ -281,6 +281,9 @@ body {
   margin: 0;
   padding: 0;
 }
+.main__img {
+  align-self: center;
+}
 @media screen and (max-width: 1024px) {
   .main__img {
     width: 100%;
